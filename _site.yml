@@ -1,0 +1,9 @@
+name: "Norbert's data"
+output_dir: "."
+navbar:
+  #title: "Anna's analysis"
+  left:
+    - text: "Intro"
+      href: index.html
+    - text: "day5genes cluster"
+      href: 00_day5genes.html
