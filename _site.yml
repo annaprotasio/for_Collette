@@ -6,4 +6,4 @@ navbar:
     - text: "Intro"
       href: index.html
     - text: "clustering"
-      href: 01_Gene_exp_clustering.html
+      href: 01_Gene_Exp_clustering.html
