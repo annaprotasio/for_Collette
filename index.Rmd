@@ -7,7 +7,6 @@ output:
     toc: true
 ---
 
-## Description of tabs
 
 **Mapping and Counting**
 

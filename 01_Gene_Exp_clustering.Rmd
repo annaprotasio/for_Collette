@@ -1,0 +1,60 @@
+---
+title: "Clustering"
+author: "Anna Protasio"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+---
+
+```{r setup, include=FALSE, echo=F, message=FALSE}
+rm(list=ls())
+
+require("knitr")
+knitr::opts_chunk$set(echo = F, warning=FALSE, message=FALSE)
+```
+
+## Pulling genes from cluster analyses
+
+### mbcluster.seq
+
+Given the `mbcluster.seq` checkboard results (below) and remembering that the coded stages are: **a** = L3, **b** = 24hrPI, **c** = 5dayPI, **d** = 10dayPI, **e** = AdMal, **f** = AdFem, **g** = micfil:
+
+
+```{r fig1,fig.height=5, fig.width=5, fig.cap = "Checkboard, MBCluster.seq output"}
+knitr::include_graphics("output/figures/TimeCourse_plot_25Clusters_VeryGoodP0.90.png")
+```
+
+I would say that the genes enriched at day5 are represented by clusters: 1, 8, 13 and 20. The gene ids corresponsing to each cluster are in a folder:
+
+[here](https://drive.google.com/drive/folders/15GEtlm8pirQh6zbUOlgqu8b2MUw3gYqa?usp=sharing) and they are **Excel** files that you can download. Individual clusters are in each sheet inside the workbook. 
+
+### Kohonen
+
+Given the `kohonen` results shown below:
+
+```{r fig2, fig.height=5, fig.width=5, fig.cap = "Kohonen output"}
+knitr::include_graphics("output/figures/Kohonen_40cluster.png")
+```
+
+And knowing that the cluster numbering starts from bottom left:
+
+```
+  01 02 03 04 05 06 07 08 
+
+ 09 10 11 12 13 14 15 16
+
+  17 18 19 20 21 22 23 24
+  
+ 25 26 27 28 29 30 31 32
+ 
+  33 34 35 36 37 38 39 40
+  
+```
+You can use the same link above as access the results.
+
+I am not sure about the Kohonen results, they are not really following what I was expecting in terms of showing, at least in some degree, some concordance with MBCluster.Seq results. 
+
+

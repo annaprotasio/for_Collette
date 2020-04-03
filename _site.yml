@@ -5,5 +5,5 @@ navbar:
   left:
     - text: "Intro"
       href: index.html
-    - text: "day5genes cluster"
-      href: 00_day5genes.html
+    - text: "clustering"
+      href: 01_Gene_exp_clustering.html

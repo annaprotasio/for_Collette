@@ -12,7 +12,7 @@
 <meta name="author" content="Anna Protasio" />
 
 
-<title>day5genes</title>
+<title>Clustering</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -358,7 +358,7 @@ div.tocify {
   <a href="index.html">Intro</a>
 </li>
 <li>
-  <a href="00_day5genes.html">day5genes cluster</a>
+  <a href="01_Gene_exp_clustering.html">clustering</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -372,9 +372,9 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">day5genes</h1>
+<h1 class="title toc-ignore">Clustering</h1>
 <h4 class="author">Anna Protasio</h4>
-<h4 class="date">20/03/2020</h4>
+<h4 class="date">03 April, 2020</h4>
 
 </div>
 
@@ -391,7 +391,7 @@ Checkboard, MBCluster.seq output
 </p>
 </div>
 <p>I would say that the genes enriched at day5 are represented by clusters: 1, 8, 13 and 20. The gene ids corresponsing to each cluster are in a folder:</p>
-<p><a href="https://drive.google.com/open?id=1ziN3GQe7bar3l4KgNI5yajSSnXylj4sZ">here</a> and they are csv files that you can download and open in Excel or a plain text editor such as TextEdit or NotePad.</p>
+<p><a href="https://drive.google.com/open?id=13ZYTfAO8jJosTEuVrYnsmfUg5eCoQBWF">here</a> and they are <strong>Excel</strong> files that you can download. Individual clusters are in each sheet inside the workbook.</p>
 </div>
 <div id="kohonen" class="section level3">
 <h3>Kohonen</h3>
@@ -403,18 +403,19 @@ Kohonen output
 </p>
 </div>
 <p>And knowing that the cluster numbering starts from bottom left:</p>
-<pre><code>  33 34 35 36 37 38 39 40
+<pre><code>  01 02 03 04 05 06 07 08 
+
+ 09 10 11 12 13 14 15 16
+
+  17 18 19 20 21 22 23 24
   
  25 26 27 28 29 30 31 32
  
-  17 18 19 20 21 22 23 24
-  
- 09 10 11 12 13 14 15 16
- 
-  01 02 03 04 05 06 07 08 </code></pre>
-<p>I would say that the interesting clusters, for those genes with higest expression at day5 are clusters: 1, 25, 33 and 40.</p>
-<p>I’ve made files with the list of genes for each of the clusters of interest here: (same link as before) <a href="https://drive.google.com/open?id=1Y9OtPkQIRrvEr9jmsbs2Y1moqYtgF9JP">here</a> and they are csv files that you can download and open in Excel or a plain text editor such as TextEdit or NotePad.</p>
-<p>However, if you’d like to see lists of genes of other clusters, see this <a href="https://drive.google.com/open?id=1Oo1Uc-Qer17pibVQ6TpZ-cNDGOsoRStN">excel file</a></p>
+  33 34 35 36 37 38 39 40
+  </code></pre>
+<p>You can use the same folder to access the results.</p>
+<p><a href="https://drive.google.com/open?id=13ZYTfAO8jJosTEuVrYnsmfUg5eCoQBWF">here</a></p>
+<p>I am not sure about the Kohonen results, they are not really following what I was expecting in terms of showing, at least in some degree, some concordance with MBCluster.Seq results.</p>
 </div>
 </div>
 
